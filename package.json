@@ -1,0 +1,27 @@
+{
+  "name": "example-js-code-coverage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/api.js",
+  "scripts": {
+    "start": "node src/api.js",
+    "test": "npx mocha -w --parallel test/*.test.js",
+    "test:coverage": "npx nyc npx mocha --parallel test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dealmeidafernando/example-js-code-coverage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dealmeidafernando/example-js-code-coverage/issues"
+  },
+  "homepage": "https://github.com/dealmeidafernando/example-js-code-coverage#readme",
+  "devDependencies": {
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "supertest": "^6.2.4"
+  }
+}
